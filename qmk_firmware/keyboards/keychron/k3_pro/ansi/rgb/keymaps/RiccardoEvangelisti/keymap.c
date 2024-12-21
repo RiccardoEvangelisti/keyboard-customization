@@ -133,11 +133,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t * record) {
     else if(keycode == KC_BSPC) {
         if (windows_pressed) {
             if (record -> event.pressed) {
+                register_code(KC_LSFT);
                 register_code(KC_HOME);
                 unregister_code(KC_HOME);
-                register_code(KC_LSFT);
-                register_code(KC_END);
-                unregister_code(KC_END);
                 unregister_code(KC_LSFT);
                 register_code(KC_BSPC);
                 in_combo = true;
@@ -151,8 +149,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t * record) {
     else if(keycode == KC_DEL) {
         if (windows_pressed) {
             if (record -> event.pressed) {
-                register_code(KC_HOME);
-                unregister_code(KC_HOME);
                 register_code(KC_LSFT);
                 register_code(KC_END);
                 unregister_code(KC_END);
@@ -162,7 +158,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t * record) {
             } else {
                 unregister_code(KC_DEL);
             }
-            return false; // do not register
+            e; // do not register
         }
     }
 
