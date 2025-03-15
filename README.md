@@ -32,8 +32,7 @@ Find your keyboard in the `keyboards` folder and compile with default keyboard-m
 `qmk config user.keyboard=keychron/k3_pro/ansi/rgb`
 
 #### Create new keymap
-Set a keymap name (mine is "RiccardoEvangelisti") that will be a new folder like: `qmk_firmware\keyboards\keychron\k3_pro\ansi\rgb\keymaps\RiccardoEvangelisti`
-`qmk new-keymap`
+Set a keymap name (mine is "RiccardoEvangelisti") that will be a new folder like: `qmk_firmware/keyboards/keychron/k3_pro/ansi/rgb/keymaps/RiccardoEvangelisti qmk new-keymap`
 
 #### Customize
 Create the files `keymap.c`, `config.h`, `rules.mk` inside the above folder
