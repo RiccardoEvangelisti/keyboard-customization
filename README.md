@@ -18,7 +18,7 @@ The firmware is NOT on the main git repo, but in a fork made by Keychron
 
 #### Move to right branch
 The keyboard is on another branch
-`git checkout -b origin/wireless_playground`
+`git checkout wireless_playground`
 
 #### Setup QMK
 Make sure you're using the qmk from the above git and not from the original link
